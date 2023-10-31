@@ -20,6 +20,17 @@ html, body {width:100%; height:100%;font-family: 'Noto Sans', sans-serif; }
 
 
 
+<<<<<<< HEAD
+=======
+
+.teacher {position: fixed; width: 100%; height: 50px;background:rgba(64,108,178,1); z-index: 777777; bottom: 0%; display: flex; justify-content: center; align-items: center; color: #fff;}
+.teacher a {color: #e9ff7b; margin-left: 30px;}
+
+
+
+
+
+>>>>>>> d4c64cd59458bd6c1c90773edc85c0b10455f179
 /*헤더*/
 .header {width:100%; min-width: 1200px; height:120px;position:fixed; z-index: 10; }
 .header h1 {width:276px; height:120px; float:left;}
@@ -781,9 +792,15 @@ margin:5px 0;
 
 
 .skill {width:100%; height:500px; background:url('../images/photography02.jpg')top center; background-attachment: fixed; position:relative; margin-bottom:100px}
+<<<<<<< HEAD
 .skill ul {width: 1120px; height:250px ;  margin:0 auto; padding-top: 140px; border:10px solid #F90}
 .skill li {width:200px; height:250px;  float:left; margin:0 40px; text-align: center; position: relative;}
 .skill li svg { border:1px solid #F90;}
+=======
+.skill ul {width: 1120px; height:250px ;  margin:0 auto; padding-top: 140px;}
+.skill li {width:200px; height:250px;  float:left; margin:0 40px; text-align: center; position: relative;}
+.skill li svg {}
+>>>>>>> d4c64cd59458bd6c1c90773edc85c0b10455f179
 .skill li p {color:#fff;  font-size:15px}
 .skill li .grade {position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); color: #FFF; font-size: 20px}
 
