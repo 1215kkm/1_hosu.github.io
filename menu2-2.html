@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메뉴 디자인1</title>
+    
+    <style>
+        * {margin:0; padding: 0}
+        li {list-style: none}
+        a {text-decoration: none}
+        
+        body {background: #333; font-size: 16px}
+        nav {width: 800px; height: 30px; margin: 0 auto; text-align: center}
+        nav li {display: inline-block; padding: 5px 30px; position: relative}
+        nav li a {color: #FFF}
+        
+        nav li span {width: 0px; height: 30px; background: #E08; position: absolute; bottom: 0; 
+        transition: all 0.3s; right: 0; z-index: -1}
+        
+        nav li:hover span {width: 100%; left: 0;}
+        
+        
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">MENU1</a><span></span></li>
+            <li><a href="#">MENU2</a><span></span></li>
+            <li><a href="#">MENU3</a><span></span></li>
+            <li><a href="#">MENU4</a><span></span></li>
+            <li><a href="#">MENU5</a><span></span></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<load target="filter/insert.xml" />
+<load target="css/default.css" />
+<load target="js/contact.js" />
+
+
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+				<!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+				<form action="./" method="post" onsubmit="return submit_request(this);">
+				<filedset>
+				<input type="hidden" name="mid" value="{$widget_info->target_mid}" />
+				<input type="hidden" name="password" value="{$rand_password}" />
+				<input type="hidden" name="nick_name" value="" />
+				<input type="hidden" name="title" value="" />
+				<input type="hidden" name="content" value="" />
+				<input type="hidden" name="category_srl" value="0" />
+
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls" >
+							
+							<input type="text" class="form-control" placeholder="Name" id="inp_name"  name="user_name" required="" data-validation-required-message="Please enter your name.">
+							
+						</div>
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							
+							<input type="email" class="form-control" placeholder="Email Address" id="inp_email" name="email_address" required="" data-validation-required-message="Please enter your email address.">
+							
+						</div>
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							
+							<input type="tel" class="form-control" placeholder="Phone Number" id="inp_phone" name="phone" required="" data-validation-required-message="Please enter your phone number.">
+							
+						</div>
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							
+							<textarea rows="5" class="form-control" placeholder="Message" id="inp_message" name="message" required="" data-validation-required-message="Please enter a message."></textarea>
+							
+						</div>
+					</div>
+					<br>
+					<div id="success"></div>
+					<div class="row">
+						<div class="form-group col-xs-12">
+							<button type="submit" class="btn btn-success btn-lg">Send Message</button>
+						</div>
+					</div>
+					</filedset>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+    var page_reload = '{$widget_info->reload}';
+	var page_reload_url = '{$widget_info->reload_url}';
+</script>
